@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Hexlet Project #1",
   "main": "index.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
