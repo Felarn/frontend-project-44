@@ -13,9 +13,10 @@ export default (gameName) => {
     const playerAns = readline.question('Your answer: ');
 
     if (playerAns === correctAns) {
-      console.log('Correct!');
+      console.log('\x1b[32m%s\x1b[0m', 'Correct!');
     } else {
       console.log(
+        '\x1b[31m%s\x1b[0m',
         `'${playerAns}' is wrong answer ;(. Correct answer was '${correctAns}'.`,
       );
       console.log(`Let's try again, ${playerName}!`);
