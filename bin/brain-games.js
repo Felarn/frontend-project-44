@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import cli from '../cli.js';
+import cli from '../src/utils/cli.js';
 
-console.log('Welcome to the Brain Games!');
+console.log('---- this is bin/brain-games.js'); // дебаг
 
 cli();
