@@ -13,6 +13,7 @@
   "author": "Alexander Shmelev",
   "license": "ISC",
   "dependencies": {
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
     "readline-sync": "^1.4.10"
   }
