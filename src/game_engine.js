@@ -1,26 +1,26 @@
-import getPlayerName from "./utils/cli.js";
-import game from "./utils/game_selector.js";
+import readline from 'readline-sync';
+import getPlayerName from './utils/cli.js';
+import game from './utils/game_selector.js';
 
 export default (gameName) => {
-  console.log("----- this is game_engine -----\n"); // дебаг
-
-  console.log("Welcome to the Brain Games!");
+  const maxTurns = 3;
   const playerName = getPlayerName();
+  console.log(game(gameName, 'rules'));
 
-  console.log(`now game_engine knows, that your name is: ${playerName}`);
-  console.log(`You are playing ${gameName}`);
-  console.log(game(gameName, "rules"));
+  for (let turn = 1; turn <= maxTurns; turn += 1) {
+    const [numberInQuestion, correctAns] = game(gameName);
+    console.log(`Question: ${numberInQuestion}`);
+    const playerAns = readline.question('Your answer: ');
 
-  for (let turn = 1; turn <= 3; turn += 1) {
-    console.log(`turn ${turn}`);
-    const result = game(gameName, "run");
-
-    if (result) {
-      console.log("correct!");
+    if (playerAns === correctAns) {
+      console.log('Correct!');
     } else {
-      console.log("fail!");
+      console.log(
+        `'${playerAns}' is wrong answer ;(. Correct answer was '${correctAns}'.`,
+      );
+      console.log(`Let's try again, ${playerName}!`);
       return;
     }
   }
-  console.log("GRATZ!");
+  console.log(`Congratulations, ${playerName}!`);
 };

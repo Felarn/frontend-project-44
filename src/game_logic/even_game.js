@@ -1,7 +1,11 @@
-export default (action = "run") => {
-  if (action === "rules")
-    return 'Answer "yes" if the number is even, otherwise answer "no".';
+import rng from '../utils/rng.js';
 
-  console.log("test run");
-  return true;
+export default (extras = null) => {
+  if (extras === 'rules') return 'Answer "yes" if the number is even, otherwise answer "no".';
+
+  const maxNum = 100;
+
+  const question = rng(maxNum);
+  const answer = question % 2 === 0 ? 'yes' : 'no';
+  return [question, answer];
 };
