@@ -16,6 +16,7 @@ git clone git@github.com:Felarn/frontend-project-44.git
 make install
 ```
 
+[![asciicast](https://asciinema.org/a/kQvH2HekUsJAjgmh3JZsDjLlc.svg)](https://asciinema.org/a/kQvH2HekUsJAjgmh3JZsDjLlc)
 
 # Игры
 
