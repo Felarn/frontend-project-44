@@ -25,7 +25,7 @@ make install
     <dt style="font-weight: bold;">brain-even</dt><dd>определение чености показываемого числа</dd>
     <dt style="font-weight: bold;">brain-calc</dt><dd>вычисление результата случайных арифметических операций</dd>
     <dt style="font-weight: bold;">brain-gcd</dt><dd>вычисление наибольшего общего делителя двух чисел</dd>
-    <dt style="font-weight: bold;">game4</dt><dd>описание игры 4</dd>
+    <dt style="font-weight: bold;">brain-progression</dt><dd>определение пропущенного члена прогрессии</dd>
     <dt style="font-weight: bold;">game5</dt><dd>описание игры 5</dd>
 </dl>
 
@@ -87,7 +87,7 @@ make install
 
 <table style="width: 100%;">
     <tr>
-        <th style="width: 100%;font-size: 25px;font-weight: bold;text-align: center;" colspan="2">Игра 3</th>
+        <th style="width: 100%;font-size: 25px;font-weight: bold;text-align: center;" colspan="2">brain-progression</th>
     </tr>
     <tr style="width: 50%;font-size: 20px;font-weight: bold;text-align: center;">
         <td>Успех</td>
@@ -95,10 +95,28 @@ make install
     </tr>
     <tr>
         <td>
-            ссылка на демку успеха 3
+            <a href="https://asciinema.org/a/5McvTwW3Qr4jXq284JNYF3BzH" target="_blank"><img src="https://asciinema.org/a/5McvTwW3Qr4jXq284JNYF3BzH.svg" /></a>
         </td>
         <td>
-            ссылка на демку провала 3
+            <a href="https://asciinema.org/a/MaNoMnCwx5Fe4nO0L8RLPf9LJ" target="_blank"><img src="https://asciinema.org/a/MaNoMnCwx5Fe4nO0L8RLPf9LJ.svg" /></a>
+        </td>
+    </tr>
+</table>
+
+<table style="width: 100%;">
+    <tr>
+        <th style="width: 100%;font-size: 25px;font-weight: bold;text-align: center;" colspan="2">Игра 5</th>
+    </tr>
+    <tr style="width: 50%;font-size: 20px;font-weight: bold;text-align: center;">
+        <td>Успех</td>
+        <td>Провал</td>
+    </tr>
+    <tr>
+        <td>
+            ссылка на демку успеха 5
+        </td>
+        <td>
+            ссылка на демку провала 5
         </td>
     </tr>
 </table>
