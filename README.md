@@ -24,7 +24,7 @@ make install
 <dl>
     <dt style="font-weight: bold;">brain-even</dt><dd>определение чености показываемого числа</dd>
     <dt style="font-weight: bold;">brain-calc</dt><dd>вычисление результата случайных арифметических операций</dd>
-    <dt style="font-weight: bold;">game3</dt><dd>описание игры 3</dd>
+    <dt style="font-weight: bold;">brain-gcd</dt><dd>вычисление наибольшего общего делителя двух чисел</dd>
     <dt style="font-weight: bold;">game4</dt><dd>описание игры 4</dd>
     <dt style="font-weight: bold;">game5</dt><dd>описание игры 5</dd>
 </dl>
@@ -63,6 +63,24 @@ make install
         </td>
         <td style="width: 50%;">
             <a href="https://asciinema.org/a/WYyAIfDviynfnlRr2eFRMALSw" target="_blank"><img src="https://asciinema.org/a/WYyAIfDviynfnlRr2eFRMALSw.svg" /></a>
+        </td>
+    </tr>
+</table>
+
+<table style="width: 100%;">
+    <tr>
+        <th style="width: 100%;font-size: 25px;font-weight: bold;text-align: center;" colspan="2">brain-gcd</th>
+    </tr>
+    <tr style="width: 50%;font-size: 20px;font-weight: bold;text-align: center;">
+        <td>Успех</td>
+        <td>Провал</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://asciinema.org/a/Zs25cMOjyjTOc1Br6O3XQMDLD" target="_blank"><img src="https://asciinema.org/a/Zs25cMOjyjTOc1Br6O3XQMDLD.svg" /></a>
+        </td>
+        <td>
+            <a href="https://asciinema.org/a/uCiGTmdVqskMZ8FhqUnySp6gL" target="_blank"><img src="https://asciinema.org/a/uCiGTmdVqskMZ8FhqUnySp6gL.svg" /></a>
         </td>
     </tr>
 </table>
