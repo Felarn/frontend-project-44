@@ -12,7 +12,7 @@ export default (gameName) => {
     console.log(`Question: ${numberInQuestion}`);
     const playerAns = readline.question('Your answer: ');
 
-    if (playerAns === correctAns) {
+    if (playerAns === String(correctAns)) {
       console.log('\x1b[32m%s\x1b[0m', 'Correct!');
     } else {
       console.log(
