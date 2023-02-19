@@ -2,26 +2,26 @@ import rng from '../utils/rng.js';
 
 export default (extra = null) => {
   if (extra === 'rules') return 'What is the result of the expression?';
-
-  const N1 = rng(10);
-  const N2 = rng(10);
+  const maxRng = 10;
+  const num1 = rng(maxRng);
+  const num2 = rng(maxRng);
   let quest = '';
   let answer = '';
 
   switch (rng(1, 3)) {
     case 1:
-      quest = `${N1} + ${N2}`;
-      answer = String(N1 + N2);
+      quest = `${num1} + ${num2}`;
+      answer = num1 + num2;
       break;
 
     case 2:
-      quest = `${N1} - ${N2}`;
-      answer = String(N1 - N2);
+      quest = `${num1} - ${num2}`;
+      answer = num1 - num2;
       break;
 
     case 3:
-      quest = `${N1} * ${N2}`;
-      answer = String(N1 * N2);
+      quest = `${num1} * ${num2}`;
+      answer = num1 * num2;
       break;
 
     default:
