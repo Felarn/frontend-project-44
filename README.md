@@ -20,7 +20,7 @@ make install
 [![asciicast](https://asciinema.org/a/kQvH2HekUsJAjgmh3JZsDjLlc.svg)](https://asciinema.org/a/kQvH2HekUsJAjgmh3JZsDjLlc)
 
 # Игры
-
+После установки игры вызываются следующими командами
 <dl>
     <dt style="font-weight: bold;">brain-even</dt><dd>Определение чености показываемого числа</dd>
     <dt style="font-weight: bold;">brain-calc</dt><dd>Вычисление результата случайных арифметических операций</dd>
