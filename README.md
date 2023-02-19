@@ -52,9 +52,9 @@ make install
     <tr>
         <th style="width: 100%;font-size: 25px;font-weight: bold;text-align: center;" colspan="2">brain-calc</th>
     </tr>
-    <tr>
-        <td style="width: 50%;font-size: 20px;font-weight: bold;text-align: center;">Успех</td>
-        <td style="width: 50%;font-size: 20px;font-weight: bold;text-align: center;">Провал</td>
+    <tr style="width: 50%;font-size: 20px;font-weight: bold;text-align: center;">
+        <td>Успех</td>
+        <td>Провал</td>
     </tr>
     <tr>
         <td style="width: 50%;">
@@ -70,15 +70,15 @@ make install
     <tr>
         <th style="width: 100%;font-size: 25px;font-weight: bold;text-align: center;" colspan="2">Игра 3</th>
     </tr>
-    <tr>
-        <td style="width: 50%;font-size: 20px;font-weight: bold;text-align: center;">Успех</td>
-        <td style="width: 50%;font-size: 20px;font-weight: bold;text-align: center;">Провал</td>
+    <tr style="width: 50%;font-size: 20px;font-weight: bold;text-align: center;">
+        <td>Успех</td>
+        <td>Провал</td>
     </tr>
     <tr>
-        <td style="width: 50%;">
+        <td>
             ссылка на демку успеха 3
         </td>
-        <td style="width: 50%;">
+        <td>
             ссылка на демку провала 3
         </td>
     </tr>
