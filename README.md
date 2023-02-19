@@ -22,11 +22,11 @@ make install
 # Игры
 
 <dl>
-    <dt style="font-weight: bold;">brain-even</dt><dd>определение чености показываемого числа</dd>
-    <dt style="font-weight: bold;">brain-calc</dt><dd>вычисление результата случайных арифметических операций</dd>
-    <dt style="font-weight: bold;">brain-gcd</dt><dd>вычисление наибольшего общего делителя двух чисел</dd>
-    <dt style="font-weight: bold;">brain-progression</dt><dd>определение пропущенного члена прогрессии</dd>
-    <dt style="font-weight: bold;">game5</dt><dd>описание игры 5</dd>
+    <dt style="font-weight: bold;">brain-even</dt><dd>Определение чености показываемого числа</dd>
+    <dt style="font-weight: bold;">brain-calc</dt><dd>Вычисление результата случайных арифметических операций</dd>
+    <dt style="font-weight: bold;">brain-gcd</dt><dd>Вычисление наибольшего общего делителя двух чисел</dd>
+    <dt style="font-weight: bold;">brain-progression</dt><dd>Определение пропущенного члена прогрессии</dd>
+    <dt style="font-weight: bold;">brain-prime</dt><dd>Определение того, простое ли число.</dd>
 </dl>
 
 ## Демонстация игр
@@ -105,7 +105,7 @@ make install
 
 <table style="width: 100%;">
     <tr>
-        <th style="width: 100%;font-size: 25px;font-weight: bold;text-align: center;" colspan="2">Игра 5</th>
+        <th style="width: 100%;font-size: 25px;font-weight: bold;text-align: center;" colspan="2">brain-prime</th>
     </tr>
     <tr style="width: 50%;font-size: 20px;font-weight: bold;text-align: center;">
         <td>Успех</td>
@@ -113,10 +113,10 @@ make install
     </tr>
     <tr>
         <td>
-            ссылка на демку успеха 5
+            <a href="https://asciinema.org/a/WqGx6rcBgT71h6TnRlLZK5c72" target="_blank"><img src="https://asciinema.org/a/WqGx6rcBgT71h6TnRlLZK5c72.svg" /></a>
         </td>
         <td>
-            ссылка на демку провала 5
+            <a href="https://asciinema.org/a/LGYu8fCCzoEzSVfKV3CB9Xu6g" target="_blank"><img src="https://asciinema.org/a/LGYu8fCCzoEzSVfKV3CB9Xu6g.svg" /></a>
         </td>
     </tr>
 </table>
