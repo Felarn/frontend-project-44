@@ -13,6 +13,7 @@
 
 ```
 git clone git@github.com:Felarn/frontend-project-44.git
+frontend-project-44
 make install
 ```
 
