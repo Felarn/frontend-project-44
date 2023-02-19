@@ -22,7 +22,7 @@ make install
 
 <dl>
     <dt style="font-weight: bold;">brain-even</dt><dd>определение чености показываемого числа</dd>
-    <dt style="font-weight: bold;">game2</dt><dd>описание игры 2</dd>
+    <dt style="font-weight: bold;">brain-calc</dt><dd>вычисление результата случайных арифметических операций</dd>
     <dt style="font-weight: bold;">game3</dt><dd>описание игры 3</dd>
     <dt style="font-weight: bold;">game4</dt><dd>описание игры 4</dd>
     <dt style="font-weight: bold;">game5</dt><dd>описание игры 5</dd>
@@ -50,7 +50,7 @@ make install
 
 <table style="width: 100%;">
     <tr>
-        <th style="width: 100%;font-size: 25px;font-weight: bold;text-align: center;" colspan="2">Игра 2</th>
+        <th style="width: 100%;font-size: 25px;font-weight: bold;text-align: center;" colspan="2">brain-calc</th>
     </tr>
     <tr>
         <td style="width: 50%;font-size: 20px;font-weight: bold;text-align: center;">Успех</td>
@@ -58,10 +58,10 @@ make install
     </tr>
     <tr>
         <td style="width: 50%;">
-            ссылка на демку успеха 2
+            <a href="https://asciinema.org/a/YodEWGwCYxVU2tIp1CLpVRpHr" target="_blank"><img src="https://asciinema.org/a/YodEWGwCYxVU2tIp1CLpVRpHr.svg" /></a>
         </td>
         <td style="width: 50%;">
-            ссылка на демку провала 2
+            <a href="https://asciinema.org/a/WYyAIfDviynfnlRr2eFRMALSw" target="_blank"><img src="https://asciinema.org/a/WYyAIfDviynfnlRr2eFRMALSw.svg" /></a>
         </td>
     </tr>
 </table>
