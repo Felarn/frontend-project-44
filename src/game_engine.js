@@ -5,10 +5,11 @@ import game from './utils/game_selector.js';
 export default (gameName) => {
   const maxTurns = 3;
   const playerName = getPlayerName();
-  console.log(game(gameName, 'rules'));
+  console.log(game[gameName]('rules'));
 
   for (let turn = 1; turn <= maxTurns; turn += 1) {
-    const [numberInQuestion, correctAns] = game(gameName);
+    // const [numberInQuestion, correctAns] = game(gameName);
+    const [numberInQuestion, correctAns] = game[gameName]();
     console.log(`Question: ${numberInQuestion}`);
     const playerAns = readline.question('Your answer: ');
 
