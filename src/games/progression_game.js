@@ -1,16 +1,25 @@
 import _ from 'lodash';
 import rng from '../utils/rng.js';
 
-export default (extra = null) => {
-  if (extra === 'rules') return 'What number is missing in the progression?';
-  const progFirstElem = rng(10);
-  const progLengt = rng(5, 10);
-  const progStep = rng(1, 10);
-  const elementToDrop = rng(progLengt - 1);
-  const progLimiter = progFirstElem + progLengt * progStep;
+const MaxFirstElement = 20;
+const progrMinLength = 5;
+const progrMaxLength = 10;
+const progrMinStep = 1;
+const progrMaxStep = 10;
 
-  const progression = _.range(progFirstElem, progLimiter, progStep);
-  const quest = `${progression.slice(0, elementToDrop).join(' ')} .. ${progression.slice(elementToDrop + 1).join(' ')}`;
+const run = () => {
+  const progrFirstElem = rng(MaxFirstElement);
+  const progrLengt = rng(progrMinLength, progrMaxLength);
+  const progrStep = rng(progrMinStep, progrMaxStep);
+  const elementToHide = rng(progrLengt - 1);
+  const progLimiter = progrFirstElem + progrLengt * progrStep;
 
-  return [quest.trim(), progression[elementToDrop]];
+  const progression = _.range(progrFirstElem, progLimiter, progrStep);
+  const quest = `${progression.slice(0, elementToHide).join(' ')} .. ${progression.slice(elementToHide + 1).join(' ')}`;
+
+  return [quest.trim(), progression[elementToHide]];
 };
+
+const rules = 'What number is missing in the progression?';
+
+export default { run, rules };

@@ -1,10 +1,10 @@
 import rng from '../utils/rng.js';
 
-export default (extra = null) => {
-  if (extra === 'rules') return 'What is the result of the expression?';
-  const maxRng = 10;
-  const num1 = rng(maxRng);
-  const num2 = rng(maxRng);
+const maxRoll = 20;
+
+const run = () => {
+  const num1 = rng(maxRoll);
+  const num2 = rng(maxRoll);
   let quest = '';
   let answer = '';
 
@@ -30,3 +30,7 @@ export default (extra = null) => {
 
   return [quest, answer];
 };
+
+const rules = 'What is the result of the expression?';
+
+export default { run, rules };

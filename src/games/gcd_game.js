@@ -1,10 +1,10 @@
 import rng from '../utils/rng.js';
 
-export default (extra = null) => {
-  if (extra === 'rules') return 'Find the greatest common divisor of given numbers.';
-  const maxRng = 100;
-  const num1 = rng(maxRng);
-  const num2 = rng(maxRng);
+const maxRoll = 100;
+
+const run = () => {
+  const num1 = rng(maxRoll);
+  const num2 = rng(maxRoll);
   let GCD = 1;
 
   const quest = `${num1} ${num2}`;
@@ -18,3 +18,7 @@ export default (extra = null) => {
 
   return [quest, GCD];
 };
+
+const rules = 'Find the greatest common divisor of given numbers.';
+
+export default { run, rules };

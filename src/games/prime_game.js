@@ -1,11 +1,11 @@
 import rng from '../utils/rng.js';
 
-export default (extras = null) => {
-  if (extras === 'rules') return 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const maxRoll = 100;
 
-  const maxNum = 100;
-  const question = rng(maxNum);
+const run = () => {
+  const question = rng(maxRoll);
   let answer = 'yes';
+
   if (question <= 1) {
     answer = 'no';
   } else {
@@ -19,3 +19,7 @@ export default (extras = null) => {
 
   return [question, answer];
 };
+
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+export default { run, rules };

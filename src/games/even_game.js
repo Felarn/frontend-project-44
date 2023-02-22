@@ -1,11 +1,13 @@
 import rng from '../utils/rng.js';
 
-export default (extras = null) => {
-  if (extras === 'rules') return 'Answer "yes" if the number is even, otherwise answer "no".';
+const maxRoll = 100;
 
-  const maxNum = 100;
-
-  const question = rng(maxNum);
+const run = () => {
+  const question = rng(maxRoll);
   const answer = question % 2 === 0 ? 'yes' : 'no';
   return [question, answer];
 };
+
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+export default { run, rules };
