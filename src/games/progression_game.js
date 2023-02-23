@@ -12,7 +12,7 @@ function run() {
   const progrLengt = rng(progrMinLength, progrMaxLength);
   const progrStep = rng(progrMinStep, progrMaxStep);
   const progLimiter = progrFirstElem + progrLengt * progrStep;
-  const elementToHide = rng(progrLengt - 1);
+  const elementToHide = rng(1, progrLengt) - 1;
 
   const progression = _.range(progrFirstElem, progLimiter, progrStep);
   const quest = `${progression.slice(0, elementToHide).join(' ')} .. ${progression.slice(elementToHide + 1).join(' ')}`;
