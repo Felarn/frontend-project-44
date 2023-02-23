@@ -5,7 +5,7 @@ const maxRoll = 100;
 function run() {
   const num1 = rng(maxRoll);
   const num2 = rng(maxRoll);
-  let GCD = 1;
+  let GCD = 0;
 
   const quest = `${num1} ${num2}`;
 
