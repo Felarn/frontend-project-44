@@ -1,6 +1,6 @@
 import rng from '../utils/rng.js';
 
-const maxRoll = 100;
+const maxRoll = 10000;
 
 function run() {
   const num1 = rng(maxRoll);
@@ -9,7 +9,7 @@ function run() {
 
   const quest = `${num1} ${num2}`;
 
-  for (let possibleGCD = Math.max(num1, num2); possibleGCD > 0; possibleGCD -= 1) {
+  for (let possibleGCD = Math.min(num1, num2); possibleGCD > 0; possibleGCD -= 1) {
     if ((num1 % possibleGCD === 0) && (num2 % possibleGCD === 0)) {
       GCD = possibleGCD;
       break;
