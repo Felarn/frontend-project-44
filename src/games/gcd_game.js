@@ -1,6 +1,6 @@
 import rng from '../utils/rng.js';
 
-const maxRoll = 10000;
+const maxRoll = 100;
 
 function run() {
   const num1 = rng(maxRoll);

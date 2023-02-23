@@ -1,7 +1,7 @@
 import rng from '../utils/rng.js';
 
 function isPrime(numberToCheck) {
-  for (let divider = 2; divider < numberToCheck; divider += 1) {
+  for (let divider = 2; divider <= numberToCheck / 2; divider += 1) {
     if (numberToCheck % divider === 0) { return false; }
   }
   return numberToCheck > 1;
