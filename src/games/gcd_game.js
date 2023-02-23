@@ -2,7 +2,7 @@ import rng from '../utils/rng.js';
 
 const maxRoll = 100;
 
-const run = () => {
+function run() {
   const num1 = rng(maxRoll);
   const num2 = rng(maxRoll);
   let GCD = 1;
@@ -16,8 +16,8 @@ const run = () => {
     }
   }
 
-  return [quest, GCD];
-};
+  return [quest, String(GCD)];
+}
 
 const rules = 'Find the greatest common divisor of given numbers.';
 

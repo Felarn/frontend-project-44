@@ -14,7 +14,7 @@ export default (gameName) => {
     console.log(`Question: ${questionForPlayer}`);
     const playerAns = readline.question('Your answer: ');
 
-    if (playerAns === String(correctAns)) {
+    if (playerAns === correctAns) {
       console.log(textcolor.green, 'Correct!');
     } else {
       console.log(

@@ -2,7 +2,7 @@ import rng from '../utils/rng.js';
 
 const maxRoll = 20;
 
-const run = () => {
+function run() {
   const num1 = rng(maxRoll);
   const num2 = rng(maxRoll);
   let quest = '';
@@ -28,8 +28,8 @@ const run = () => {
       console.error('wrong index for math operation');
   }
 
-  return [quest, answer];
-};
+  return [quest, String(answer)];
+}
 
 const rules = 'What is the result of the expression?';
 
