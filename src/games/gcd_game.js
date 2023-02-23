@@ -3,12 +3,12 @@ import rng from '../utils/rng.js';
 const maxRoll = 100;
 
 function run() {
-  const [num1, num2] = [rng(maxRoll), rng(maxRoll)].sort((a, b) => a - b);
-  let GCD = num1 || num2;
-  const quest = `${num2} ${num1}`;
+  const [lesserNum, biggerNum] = [rng(maxRoll), rng(maxRoll)].sort((a, b) => a - b);
+  let GCD = lesserNum || biggerNum;
+  const quest = `${biggerNum} ${lesserNum}`;
 
-  for (let possibleGCD = num1; possibleGCD > 0; possibleGCD -= 1) {
-    if ((num1 % possibleGCD === 0) && (num2 % possibleGCD === 0)) {
+  for (let possibleGCD = lesserNum; possibleGCD > 0; possibleGCD -= 1) {
+    if ((lesserNum % possibleGCD === 0) && (biggerNum % possibleGCD === 0)) {
       GCD = possibleGCD;
       break;
     }
