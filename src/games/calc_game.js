@@ -12,7 +12,7 @@ function run() {
 
   const num1 = rng(maxRoll);
   const num2 = rng(maxRoll);
-  const operIndex = rng(2);
+  const operIndex = rng(operation.length - 1);
 
   const quest = `${num1} ${symbol[operIndex]} ${num2}`;
   const answer = String(operation[operIndex](num1, num2));
