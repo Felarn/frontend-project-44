@@ -3,32 +3,20 @@ import rng from '../utils/rng.js';
 const maxRoll = 20;
 
 function run() {
+  const symbol = ['+', '-', '*'];
+  const operation = [
+    (a, b) => a + b,
+    (a, b) => a - b,
+    (a, b) => a * b,
+  ];
+
   const num1 = rng(maxRoll);
   const num2 = rng(maxRoll);
-  let quest = '';
-  let answer = '';
+  const operIndex = rng(2);
 
-  switch (rng(1, 3)) {
-    case 1:
-      quest = `${num1} + ${num2}`;
-      answer = num1 + num2;
-      break;
-
-    case 2:
-      quest = `${num1} - ${num2}`;
-      answer = num1 - num2;
-      break;
-
-    case 3:
-      quest = `${num1} * ${num2}`;
-      answer = num1 * num2;
-      break;
-
-    default:
-      console.error('wrong index for math operation');
-  }
-
-  return [quest, String(answer)];
+  const quest = `${num1} ${symbol[operIndex]} ${num2}`;
+  const answer = String(operation[operIndex](num1, num2));
+  return [quest, answer];
 }
 
 const rules = 'What is the result of the expression?';
