@@ -15,9 +15,12 @@ function run() {
   const elementToHide = rng(1, progrLengt) - 1;
 
   const progression = _.range(progrFirstElem, progLimiter, progrStep);
-  const quest = `${progression.slice(0, elementToHide).join(' ')} .. ${progression.slice(elementToHide + 1).join(' ')}`;
+  const partN1 = progression.slice(0, elementToHide).join(' ');
+  const partN2 = progression.slice(elementToHide + 1).join(' ');
+  const quest = `${partN1} .. ${partN2}`.trim();
+  const answer = String(progression[elementToHide]);
 
-  return [quest.trim(), String(progression[elementToHide])];
+  return [quest, answer];
 }
 
 const rules = 'What number is missing in the progression?';
