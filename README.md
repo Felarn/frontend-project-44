@@ -1,14 +1,16 @@
 # Тесты
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/Felarn/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Felarn/frontend-project-44/actions)
 
-### Оценка Maintainability от Codeclimate:
-[![Maintainability](https://api.codeclimate.com/v1/badges/45592d5faac931a33a49/maintainability)](https://codeclimate.com/github/Felarn/frontend-project-44/maintainability)
+
+[![Actions Status](https://github.com/Felarn/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Felarn/frontend-project-44/actions) <span style="font-size: 18px;"> - Hexlet tests and linter status.</span>
+
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/45592d5faac931a33a49/maintainability)](https://codeclimate.com/github/Felarn/frontend-project-44/maintainability) <span style="font-size: 18px;"> - Оценка Maintainability от Codeclimate.</span>
+
 
 # Описание
 Это первый учебный проект от Hexlet - «Игры разума».
 Представляет из себя набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильный ответ завершает игру.
-<a href="#game-description">Краткое описание игр -></a>
+<a href="#game-description" >Краткое описание игр -></a>
 
 # Установка
 <ol>
@@ -23,7 +25,7 @@ make install
 ```
 
 [![asciicast](https://asciinema.org/a/kQvH2HekUsJAjgmh3JZsDjLlc.svg)](https://asciinema.org/a/kQvH2HekUsJAjgmh3JZsDjLlc)
-<p id="game-description"></p>
+<p id="game-description" ></p>
 
 # Игры
 После установки игры вызываются следующими командами:
